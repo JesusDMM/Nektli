@@ -6,7 +6,7 @@ package nektli;
 
 /**
  *
- * @author mendo
+ * @author mendo a cargo del jimson
  */
 public class Nektli {
 
