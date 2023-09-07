@@ -4,6 +4,8 @@
  */
 package nektli;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 52811
@@ -121,7 +123,7 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Trazado 1.png"))); // NOI18N
         jLabel12.setText("jLabel12");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 720));
 
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 280, -1, -1));
@@ -138,7 +140,30 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        if (jTextField1.getText().equals("") || jTextField2.getText().equals("") || jPasswordField1.getText().equals("") || jPasswordField2.getText().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "No dejes ningun campo en blanco");
+        } else {
+            if (jPasswordField1.getText().equals(jPasswordField2.getText())) {
+                bd bd = new bd ();
+                String Nombre = jTextField2.getText();
+                Object Seleccion = jComboBox1.getSelectedItem();
+                String Ocupacion = Seleccion.toString();
+                String Correo = jTextField1.getText();
+                String Contraseña = jPasswordField1.getText();
+                boolean bandera = bd.Ingresar_Usuario (Nombre, Ocupacion, Correo, Contraseña);
+                if (bandera == true) {
+                    JOptionPane.showMessageDialog(rootPane, "Informacion Guardada con exito, Inicia Sesion");{
+                    JLogin login = new JLogin ();
+                    login.setVisible(true);
+                    this.dispose();
+                }
+                }else{
+                    JOptionPane.showMessageDialog(rootPane, "Error inesperado vuelve mas tarde");
+                }
+            }else{
+                JOptionPane.showMessageDialog(rootPane, "Las contraseñas deben de coincidir");
+            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

@@ -4,17 +4,24 @@
  */
 package nektli;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 52811
  */
 public class JLogin extends javax.swing.JFrame {
+    public int id;
 
     /**
      * Creates new form JLogin
      */
     public JLogin() {
         initComponents();
+    }
+    
+    public int getInt () {
+        return id;
     }
 
     /**
@@ -49,6 +56,11 @@ public class JLogin extends javax.swing.JFrame {
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 230, 380, 40));
 
         jButton1.setText("ENTRAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 210, 50));
 
         jPasswordField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -101,6 +113,23 @@ public class JLogin extends javax.swing.JFrame {
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
         //contraseña
     }//GEN-LAST:event_jPasswordField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        bd bd = new bd ();
+        if (jTextField1.getText().equals("") || jPasswordField1.getText().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "No dejes ningun campo en blanco");
+        }else {
+            id = bd.Buscar_Usuario(jTextField1.getText(),jPasswordField1.getText() );
+            if (id!=0){
+                Menu menu = new Menu();
+                menu.setVisible(true);
+                this.dispose();
+            }else{
+                JOptionPane.showMessageDialog(rootPane, "Usuario no encontrado");
+            }
+        }
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

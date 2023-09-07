@@ -28,14 +28,7 @@ public class bd {
             System.err.println(e);
         }
     }
-    
-    public static void main (String []args) {
-        bd bd = new bd ();
-        int id = bd.Id_Usuario("roblesdannya@gmail.com", "JESUS");
-        System.out.println(id);
-    }
-    
-    public static int Id_Usuario(String Nombre, String Contraseña) {
+    /*public static int Id_Usuario(String Nombre, String Contraseña) {
         int cont = 0;
         int id = 0;
         try {
@@ -49,8 +42,64 @@ public class bd {
         } catch (Exception e) {
             System.err.print(e);
         }
-        System.out.println("chin");
+        return 0;
+    }*/
+    
+    public static int Buscar_Usuario (String Correo, String Contraseña) {
+        try {
+            rs = st.executeQuery("select id from Usuarios where Correo = '"+Correo+"' and Contraseña = '"+ Contraseña+"'");
+            while (rs.next()) {
+                return rs.getInt("id");
+            }
+        } catch (Exception e) {
+            System.err.print(e);
+        }
         return 0;
     }
-
+    
+    public static boolean Ingresar_Usuario (String Nombre, String Ocupaccion, String Correo, String Contraseña){
+        try {
+            ps = con.prepareStatement("INSERT INTO Cuentas VALUES (?,?,?,?,?)");
+            ps.setInt(1, 0);
+            ps.setString(2, Nombre);
+            ps.setString(3, Ocupaccion);
+            ps.setString(4, Correo);
+            ps.setString(5, Contraseña);
+            ps.executeUpdate();
+            ps = con.prepareStatement("INSERT INTO Usuarios VALUES (?,?,?)");
+            ps.setInt(1, 0);
+            ps.setString(2, Correo);
+            ps.setString(3, Contraseña);
+            return true;
+        } catch (Exception e) {
+            System.err.print(e);
+        }
+        return false;
+    }
+    
+    public static boolean Insertar_Colmena (String nombre, int n_alzas, int n_bastidores, String tipo, String suelo, String proteccion, String estado, String fecha
+    ,double longitud,double latitud, String ciudad,String descripcion, int id_usuario) {
+        try {
+            ps = con.prepareStatement("INSERT INTO Colmenas VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            ps.setInt(1, 0);
+            ps.setString(2, nombre);
+            ps.setInt(3, n_alzas);
+            ps.setInt(4, n_bastidores);
+            ps.setString(5, tipo);
+            ps.setString(6, suelo);
+            ps.setString(7, proteccion);
+            ps.setString(8, estado);
+            ps.setString(9, fecha);
+            ps.setDouble(10, longitud);
+            ps.setDouble(11, latitud);
+            ps.setString(12, ciudad);
+            ps.setString(13, descripcion);
+            ps.setInt(14, id_usuario);
+            ps.executeUpdate();
+            return true;
+        } catch (Exception e) {
+            System.err.print(e);
+        }
+        return false;
+    }
 }

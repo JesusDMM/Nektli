@@ -4,6 +4,10 @@
  */
 package nektli;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 52811
@@ -15,6 +19,7 @@ public class Colmenas extends javax.swing.JFrame {
      */
     public Colmenas() {
         initComponents();
+        jDateChooser1.getDateEditor().setEnabled(false);
     }
 
     /**
@@ -67,7 +72,7 @@ public class Colmenas extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(78, 37, 19));
         jLabel3.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(78, 37, 19));
-        jLabel3.setText("Cuadros");
+        jLabel3.setText("Número de Bastidores");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
 
         jLabel4.setBackground(new java.awt.Color(78, 37, 19));
@@ -119,6 +124,12 @@ public class Colmenas extends javax.swing.JFrame {
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 320, -1, -1));
         getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, 260, 90));
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 260, 30));
+
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 260, 30));
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 270, 260, 30));
 
@@ -144,6 +155,11 @@ public class Colmenas extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("Listo");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 590, 210, 60));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -160,6 +176,56 @@ public class Colmenas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        try {
+            String nombre = jTextField8.getText();
+            int n_alzas = Integer.parseInt(jTextField7.getText());
+            int n_bastidores = Integer.parseInt(jTextField6.getText());
+            String tipo = jTextField4.getText();
+            //Trabajo con jcombobox
+            Object Item = jComboBox3.getSelectedItem();
+            String suelo = Item.toString();
+            Item = jComboBox2.getSelectedItem();
+            String proteccion = Item.toString();
+            Item = jComboBox1.getSelectedItem();
+            String estado = Item.toString();
+            ///////////////////////////////
+            //Tratamiento de fecha
+            Date selectedDate = jDateChooser1.getDate();
+            SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
+            String Fecha = sdf.format(selectedDate);
+            ///////////////////////////////////
+            double longitud = Double.parseDouble(jTextField2.getText());
+            double latitud = Double.parseDouble(jTextField5.getText());
+            String ciudad = jTextField10.getText();
+            String descripcion = textArea1.getText();
+            if (nombre.equals("") || n_alzas==0 || n_bastidores==0 || tipo.equals("") || Fecha.equals("") || longitud==0
+            || latitud==0 || ciudad.equals("") || descripcion.equals("")) {
+                JOptionPane.showMessageDialog(rootPane, "Ingresa todos los datos");
+            }else{
+                bd bd = new bd();
+                JLogin ID = new JLogin();
+                int id = ID.getInt();
+                boolean bandera = bd.Insertar_Colmena(nombre, n_alzas, n_bastidores, tipo, suelo, proteccion, estado, Fecha,
+                longitud, latitud, ciudad, descripcion, id);
+                if (bandera == true) {
+                    JOptionPane.showMessageDialog(rootPane, "Se creo la colmena con exito");
+                }else{
+                    JOptionPane.showMessageDialog(rootPane, "Ups! ocurrio un error intentalo despues");
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(rootPane, "Tipos de datos incorrectos en tus respuestas");
+        }
+        JLogin id = new JLogin ();
+        int ID = id.getInt();
+        System.out.println(ID);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
