@@ -184,13 +184,14 @@ public class bd {
     }
 
     public static DefaultTableModel Tabla_Tareas(DefaultTableModel modelo, int id_usuario, int id_Colmena) {
-        String arreglo[] = new String[4];
+        String arreglo[] = new String[5];
         try {
             st = con.createStatement();
-            rs = st.executeQuery("select tar.Nombre_colmena, count(t.id_tarea) as N_Tratamientos, count(c.id_tarea) as N_Cosechas, count(a.id_tarea) as N_Alimentacion\n"
+            rs = st.executeQuery("select tar.Nombre_colmena, count(t.id_tarea) as N_Tratamientos, count(c.id_tarea) as N_Cosechas, count(a.id_tarea) as N_Alimentacion, count(m.id_tarea) as N_Movimientos\n"
                     + "from tareas as tar inner join Tratamientos as t on tar.ID = t.id_tarea\n"
                     + "inner join Cosechas as c on tar.ID = c.id_tarea\n"
                     + "inner join Alimentaciones as a on tar.ID = a.id_tarea\n"
+                    + "inner join Movimientos as m on tar.ID = m.id_Tarea\n"
                     + "where tar.id_Usuario = " + id_usuario + " and tar.id_Colmena = " + id_Colmena + " "
                     + "group by tar.Nombre_colmena");
             while (rs.next()) {
@@ -198,6 +199,7 @@ public class bd {
                 arreglo[1] = rs.getInt(2) + "";
                 arreglo[2] = rs.getInt(3) + "";
                 arreglo[3] = rs.getInt(4) + "";
+                arreglo[4] = rs.getInt(5) + "";
                 modelo.addRow(arreglo);
             }
             return modelo;

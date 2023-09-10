@@ -29,6 +29,7 @@ public class Tareas extends javax.swing.JFrame {
         modelo_combinado.addColumn("Numeros de tratamientos");
         modelo_combinado.addColumn("Numero de cosechas");
         modelo_combinado.addColumn("Numero de alimentaciones");
+        modelo_combinado.addColumn("Numero de movimientos");
         modelo_combinado.setRowCount(0);
         jTable1.setModel(modelo_combinado);
         // centra la ventana al medio (850, 450)
@@ -690,6 +691,7 @@ public class Tareas extends javax.swing.JFrame {
                     modelo_combinado.addColumn("Numeros de tratamientos");
                     modelo_combinado.addColumn("Numero de cosechas");
                     modelo_combinado.addColumn("Numero de alimentaciones");
+                    modelo_combinado.addColumn("Numero de movimientos");
                     modelo_combinado.setRowCount(0);
                     modelo_combinado = bd.Tabla_Tareas(modelo_combinado, ID, id_colmena);
                     jTable1.setModel(modelo_combinado);

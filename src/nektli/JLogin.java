@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * @author 52811
  */
 public class JLogin extends javax.swing.JFrame {
-    public static int id = 0;
+    public static int id = 1;
 
     /**
      * Creates new form JLogin
