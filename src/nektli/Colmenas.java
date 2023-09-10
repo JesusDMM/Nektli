@@ -4,6 +4,8 @@
  */
 package nektli;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -20,6 +22,15 @@ public class Colmenas extends javax.swing.JFrame {
     public Colmenas() {
         initComponents();
         jDateChooser1.getDateEditor().setEnabled(false);
+        jLabel15.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // Cerrar la ventana cuando se hace clic en la etiqueta
+                Menu menu = new Menu ();
+                menu.setVisible(true);
+                dispose();
+            }
+        });
     }
 
     /**

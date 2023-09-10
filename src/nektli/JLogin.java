@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * @author 52811
  */
 public class JLogin extends javax.swing.JFrame {
-    public static int id = 1;
+    public static int id = 0;
 
     /**
      * Creates new form JLogin
@@ -72,6 +72,11 @@ public class JLogin extends javax.swing.JFrame {
         getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 380, 40));
 
         jButton2.setText("Registrate");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 560, 100, 30));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
@@ -127,6 +132,13 @@ public class JLogin extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // Crear cuenta
+        Registro registro = new Registro ();
+        registro.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

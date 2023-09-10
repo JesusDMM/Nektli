@@ -1,5 +1,7 @@
 package nektli;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,6 +23,15 @@ public class Clima extends javax.swing.JFrame {
         jLabel14.setText("");
         jLabel15.setText("");
         jLabel3.setText("");
+        jLabel16.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // Cerrar la ventana cuando se hace clic en la etiqueta
+                Menu menu = new Menu ();
+                menu.setVisible(true);
+                dispose();
+            }
+        });
     }
 
     /**

@@ -4,6 +4,9 @@
  */
 package nektli;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 /**
  *
  * @author 52811
@@ -15,6 +18,15 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
+        jLabel17.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // Cerrar la ventana cuando se hace clic en la etiqueta
+                JLogin login = new JLogin ();
+                login.setVisible(true);
+                dispose();
+            }
+        });
     }
 
     /**

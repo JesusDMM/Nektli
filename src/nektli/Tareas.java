@@ -1,10 +1,13 @@
 package nektli;
 
 import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
 
 public class Tareas extends javax.swing.JFrame {
 
@@ -13,6 +16,7 @@ public class Tareas extends javax.swing.JFrame {
      */
     public static int ID = 0;
     DefaultTableModel modelo_combinado = new DefaultTableModel();
+
     public Tareas() {
         //inicialización de componentes
         initComponents();
@@ -25,10 +29,19 @@ public class Tareas extends javax.swing.JFrame {
         modelo_combinado.addColumn("Numeros de tratamientos");
         modelo_combinado.addColumn("Numero de cosechas");
         modelo_combinado.addColumn("Numero de alimentaciones");
+        modelo_combinado.setRowCount(0);
         jTable1.setModel(modelo_combinado);
         // centra la ventana al medio (850, 450)
         this.setLocationRelativeTo(null);
-
+        jLabel25.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // Cerrar la ventana cuando se hace clic en la etiqueta
+                Menu menu = new Menu ();
+                menu.setVisible(true);
+                dispose();
+            }
+        });
     }
 
     /**
@@ -72,8 +85,6 @@ public class Tareas extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         update_tab = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jDateChooser7 = new com.toedter.calendar.JDateChooser();
@@ -85,8 +96,6 @@ public class Tareas extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
@@ -102,8 +111,6 @@ public class Tareas extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
@@ -114,7 +121,23 @@ public class Tareas extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jLabel31 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jDateChooser9 = new com.toedter.calendar.JDateChooser();
+        jDateChooser10 = new com.toedter.calendar.JDateChooser();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jButton11 = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField18 = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -239,27 +262,14 @@ public class Tareas extends javax.swing.JFrame {
 
         add_tab.add(add_tab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, -1));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
         jButton3.setText("Guardar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        add_tab.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, 140, 50));
-
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton2.setText("Actualizar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        add_tab.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 520, 140, 50));
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton1.setText("Eliminar");
-        add_tab.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, 140, 50));
+        add_tab.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 520, 220, 80));
 
         tabbed_pane.addTab("Tratamiento", add_tab);
 
@@ -292,27 +302,14 @@ public class Tareas extends javax.swing.JFrame {
 
         update_tab.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 380, 110));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton4.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
         jButton4.setText("Guardar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        update_tab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 520, 140, 50));
-
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton5.setText("Actualizar");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        update_tab.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 520, 140, 50));
-
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton6.setText("Eliminar");
-        update_tab.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 520, 140, 50));
+        update_tab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 480, 200, 90));
 
         jLabel4.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
         jLabel4.setText("Nombre de la colmena");
@@ -366,27 +363,14 @@ public class Tareas extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 370, 140));
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton7.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
         jButton7.setText("Guardar");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, 140, 50));
-
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton8.setText("Actualizar");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 490, 140, 50));
-
-        jButton9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton9.setText("Eliminar");
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 490, 140, 50));
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 530, 220, 70));
 
         jLabel8.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
         jLabel8.setText("Cantidad de dias");
@@ -411,6 +395,7 @@ public class Tareas extends javax.swing.JFrame {
             }
         });
 
+        jButton10.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
         jButton10.setText("Buscar");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -431,45 +416,109 @@ public class Tareas extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(jTable1);
 
+        jLabel31.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel31.setText("Filtros");
+
+        jComboBox1.setFont(new java.awt.Font("OCR A Extended", 0, 25)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cantidad de tareas", "Tratamiento", "Movimiento", "Cosecha", "Alimento" }));
+
         javax.swing.GroupLayout search_tabLayout = new javax.swing.GroupLayout(search_tab);
         search_tab.setLayout(search_tabLayout);
         search_tabLayout.setHorizontalGroup(
             search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(search_tabLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel24)
+                .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(search_tabLayout.createSequentialGroup()
-                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 760, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane3))
-                .addContainerGap(772, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 911, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(search_tabLayout.createSequentialGroup()
+                                .addGap(39, 39, 39)
+                                .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel24)
+                                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(79, 79, 79)
+                                .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel31)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(search_tabLayout.createSequentialGroup()
+                        .addGap(384, 384, 384)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(774, Short.MAX_VALUE))
         );
         search_tabLayout.setVerticalGroup(
             search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(search_tabLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel24)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                    .addComponent(jTextField15))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(467, Short.MAX_VALUE))
+                .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel31))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(46, 46, 46)
+                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(593, Short.MAX_VALUE))
         );
 
         tabbed_pane.addTab("Total Tareas", search_tab);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel7.setText("Fecha llegada");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel26.setText("Fecha Salida");
+        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel27.setText("Ciudad de salida");
+        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel28.setText("Ciudad de llegada");
+        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel29.setText("Motivo");
+        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 260, -1, -1));
+        jPanel2.add(jDateChooser9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 380, 40));
+        jPanel2.add(jDateChooser10, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 380, 40));
+        jPanel2.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 380, 50));
+        jPanel2.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 380, 50));
+
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane4.setViewportView(jTextArea3);
+
+        jPanel2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, 380, 130));
+
+        jButton11.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jButton11.setText("Guardar");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 530, 210, 70));
+
+        jLabel30.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel30.setText("Nombre de la colmena");
+        jPanel2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+        jPanel2.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 370, 50));
+
         tabbed_pane.addTab("Movimientos", jPanel2);
 
         left_panel.add(tabbed_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 0, 1700, -1));
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
-        left_panel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
+        left_panel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         getContentPane().add(left_panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1270, 690));
 
@@ -508,18 +557,6 @@ public class Tareas extends javax.swing.JFrame {
         // cursor
         minimize_button.setBackground(new Color(92, 0, 0));
     }//GEN-LAST:event_minimize_buttonMouseExited
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // Tratamiento Guardar
@@ -610,20 +647,20 @@ public class Tareas extends javax.swing.JFrame {
             int cantidad_dias = Integer.parseInt(jTextField7.getText());
             String descripcion = jTextArea2.getText();
             String nombre = jTextField9.getText();
-            if(fecha_inicial.equals("")||tipo.equals("")||alimentos.equals("")||descripcion.equals("")||nombre.equals("")){
+            if (fecha_inicial.equals("") || tipo.equals("") || alimentos.equals("") || descripcion.equals("") || nombre.equals("")) {
                 JOptionPane.showMessageDialog(rootPane, "No dejes ningun campo sin rellenar");
-            }else{
+            } else {
                 int id_colmena = bd.Buscar_Colmena(nombre, ID);
-                if (id_colmena!=0){
+                if (id_colmena != 0) {
                     //Insertar_alimentacion (int id_Usuario, int id_Colmena, String fecha, String alimento,String tipo, double cantidad, int cantidad_dias
                     //,String descripcion)
                     int bandera = bd.Insertar_alimentacion(ID, id_colmena, fecha_inicial, alimentos, tipo, cantidad, cantidad_dias, descripcion);
-                    if (bandera!=0){
+                    if (bandera != 0) {
                         JOptionPane.showMessageDialog(rootPane, "Se guardo la tarea con exito");
-                    }else{
+                    } else {
                         JOptionPane.showMessageDialog(rootPane, "Se produjo un error intentalo despues");
                     }
-                }else{
+                } else {
                     JOptionPane.showMessageDialog(rootPane, "No se encontro el nombre de la colmena");
                 }
             }
@@ -640,14 +677,123 @@ public class Tareas extends javax.swing.JFrame {
         // Buscar colmena para la tabla
         String nombre = jTextField15.getText();
         int id_colmena = bd.Buscar_Colmena(nombre, ID);
-        if (id_colmena!=0){
-            modelo_combinado = bd.Tabla_Tareas(modelo_combinado, ID, id_colmena);
-            jTable1.setModel(modelo_combinado);
-        }else{
+        if (id_colmena != 0) {
+            Object Seleccion = jComboBox1.getSelectedItem();
+            String Ocupacion = Seleccion.toString();
+            TableColumn columna;
+            switch (Ocupacion) {
+                //Cantidad de tareas, Tratamiento, Movimiento, Cosecha, Alimento
+                case "Cantidad de tareas":
+                    modelo_combinado
+                            .setColumnCount(0);
+                    modelo_combinado.addColumn("Nombre de Colmena");
+                    modelo_combinado.addColumn("Numeros de tratamientos");
+                    modelo_combinado.addColumn("Numero de cosechas");
+                    modelo_combinado.addColumn("Numero de alimentaciones");
+                    modelo_combinado.setRowCount(0);
+                    modelo_combinado = bd.Tabla_Tareas(modelo_combinado, ID, id_colmena);
+                    jTable1.setModel(modelo_combinado);
+                    break;
+                case "Tratamiento":
+                    modelo_combinado
+                            .setColumnCount(0);
+                    modelo_combinado.addColumn("Nombre de Colmena");
+                    modelo_combinado.addColumn("Fecha inicial");
+                    modelo_combinado.addColumn("Fecha final");
+                    modelo_combinado.addColumn("Enfermedad");
+                    modelo_combinado.addColumn("Producto");
+                    modelo_combinado.addColumn("Dosis");
+                    modelo_combinado.addColumn("Repeticiones por dia");
+                    modelo_combinado.addColumn("Encargado");
+                    modelo_combinado.setRowCount(0);
+                    modelo_combinado = bd.Tabla_Tratamiento(modelo_combinado, ID, id_colmena);
+                    jTable1.setModel(modelo_combinado);
+                    break;
+                case "Movimiento":
+                    modelo_combinado
+                            .setColumnCount(0);
+                    modelo_combinado.addColumn("Nombre de Colmena");
+                    modelo_combinado.addColumn("Fecha de salida");
+                    modelo_combinado.addColumn("Ciudad de salida");
+                    modelo_combinado.addColumn("Fecha llegada");
+                    modelo_combinado.addColumn("Motivo");
+                    modelo_combinado.setRowCount(0);
+                    modelo_combinado = bd.Tabla_Movimientos(modelo_combinado, ID, id_colmena);
+                    jTable1.setModel(modelo_combinado);
+                    break;
+                case "Cosecha":
+                    modelo_combinado
+                            .setColumnCount(0);
+                    modelo_combinado.addColumn("Nombre de Colmena");
+                    modelo_combinado.addColumn("Fecha");
+                    modelo_combinado.addColumn("Producto");
+                    modelo_combinado.addColumn("Cantidad");
+                    modelo_combinado.addColumn("Descripción");
+
+                    modelo_combinado.setRowCount(0);
+                    modelo_combinado = bd.Tabla_Cosechas(modelo_combinado, ID, id_colmena);
+                    jTable1.setModel(modelo_combinado);
+                    columna = jTable1.getColumnModel().getColumn(4);
+                    columna.setPreferredWidth(400);
+                    break;
+                case "Alimento":
+                    modelo_combinado
+                            .setColumnCount(0);
+                    modelo_combinado.addColumn("Nombre de Colmena");
+                    modelo_combinado.addColumn("Fecha");
+                    modelo_combinado.addColumn("Tipo");
+                    modelo_combinado.addColumn("Alimento");
+                    modelo_combinado.addColumn("Cantidad");
+                    modelo_combinado.addColumn("Cantidad de dias");
+                    modelo_combinado.addColumn("Descripcion");
+                    modelo_combinado.setRowCount(0);
+                    modelo_combinado = bd.Tabla_Alimentaciones(modelo_combinado, ID, id_colmena);
+                    jTable1.setModel(modelo_combinado);
+                    columna = jTable1.getColumnModel().getColumn(6);
+                    columna.setPreferredWidth(400);
+                    break;
+            }
+
+        } else {
             JOptionPane.showMessageDialog(rootPane, "Nombre de colmena incorrecta");
         }
-        
+
     }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // guardar 
+        try {
+            Date selectedDate = jDateChooser9.getDate();
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            String fecha_salida = sdf.format(selectedDate);
+            String ciudad = jTextField16.getText();
+            selectedDate = jDateChooser8.getDate();
+            sdf = new SimpleDateFormat("yyyy-MM-dd");
+            String fecha_llegada = sdf.format(selectedDate);
+            String ciudad_llegada = jTextField17.getText();
+            String motivo = jTextArea3.getText();
+            String nombre = jTextField18.getText();
+            if (fecha_salida.equals("") || ciudad.equals("") || fecha_llegada.equals("") || ciudad_llegada.equals("") || motivo.equals("") || nombre.equals("")) {
+                JOptionPane.showMessageDialog(rootPane, "Ingresa todos los datos");
+            } else {
+                int id_colmena = bd.Buscar_Colmena(nombre, ID);
+                if (id_colmena != 0) {
+                    //Insertar_Movimiento (int id_Usuario, int id_Colmena, String fecha_salida, String ciudad_salida, String fecha_llegada
+                    //, String ciudad_llegada, String motivo
+                    int bandera = bd.Insertar_Movimiento(ID, id_colmena, fecha_salida, ciudad, fecha_llegada, ciudad_llegada, motivo);
+                    if (bandera != 0) {
+                        JOptionPane.showMessageDialog(rootPane, "Se guardo la tarea con exito");
+                    } else {
+                        JOptionPane.showMessageDialog(rootPane, "Se produjo un error intentalo despues");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(rootPane, "No se encontro el nombre de la colmena");
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(rootPane, "Ingresa todos los datos correctamente");
+        }
+    }//GEN-LAST:event_jButton11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -697,17 +843,14 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JLabel exit_button;
     private javax.swing.JLabel fill_label;
     private javax.swing.JLabel fill_label2;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jComboBox1;
     private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser10;
     private com.toedter.calendar.JDateChooser jDateChooser2;
     private com.toedter.calendar.JDateChooser jDateChooser3;
     private com.toedter.calendar.JDateChooser jDateChooser4;
@@ -715,6 +858,7 @@ public class Tareas extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser jDateChooser6;
     private com.toedter.calendar.JDateChooser jDateChooser7;
     private com.toedter.calendar.JDateChooser jDateChooser8;
+    private com.toedter.calendar.JDateChooser jDateChooser9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -733,10 +877,17 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -744,9 +895,11 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
@@ -754,6 +907,9 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

@@ -160,7 +160,7 @@ public class bd {
     }
 
     public static int Insertar_alimentacion(int id_Usuario, int id_Colmena, String fecha, String alimento, String tipo, double cantidad, int cantidad_dias,
-             String descripcion) {
+            String descripcion) {
         int id_Tarea = 0;
         try {
             rs = st.executeQuery("select id from Tareas where id_Usuario = " + id_Usuario + " and id_Colmena = " + id_Colmena);
@@ -191,13 +191,13 @@ public class bd {
                     + "from tareas as tar inner join Tratamientos as t on tar.ID = t.id_tarea\n"
                     + "inner join Cosechas as c on tar.ID = c.id_tarea\n"
                     + "inner join Alimentaciones as a on tar.ID = a.id_tarea\n"
-                    + "where tar.id_Usuario = "+id_usuario+" and tar.id_Colmena = "+ id_Colmena + " "
+                    + "where tar.id_Usuario = " + id_usuario + " and tar.id_Colmena = " + id_Colmena + " "
                     + "group by tar.Nombre_colmena");
             while (rs.next()) {
                 arreglo[0] = rs.getString(1);
-                arreglo[1] = rs.getInt(2)+"";
-                arreglo[2] = rs.getInt(3)+"";
-                arreglo[3] = rs.getInt(4)+"";
+                arreglo[1] = rs.getInt(2) + "";
+                arreglo[2] = rs.getInt(3) + "";
+                arreglo[3] = rs.getInt(4) + "";
                 modelo.addRow(arreglo);
             }
             return modelo;
@@ -205,5 +205,122 @@ public class bd {
             System.out.println("El error es " + e);
         }
         return modelo;
+    }
+
+    public static DefaultTableModel Tabla_Tratamiento(DefaultTableModel modelo, int id_usuario, int id_Colmena) {
+        String arreglo[] = new String[8];
+        try {
+            st = con.createStatement();
+            rs = st.executeQuery("select ta.Nombre_colmena, t.Fecha_I, t.Fecha_F, t.Enfermedad, t.Producto, t.Dosis, t.Repeticiones_Dia, t.Encargado\n"
+                    + "from Tratamientos as t inner join Tareas as ta on t.id_Tarea = ta.Id \n"
+                    + "where ta.id_Usuario = " + id_usuario + " and ta.id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                arreglo[0] = rs.getString(1);
+                arreglo[1] = rs.getString(2);
+                arreglo[2] = rs.getString(3);
+                arreglo[3] = rs.getString(4);
+                arreglo[4] = rs.getString(5);
+                arreglo[5] = rs.getDouble(6) + "";
+                arreglo[6] = rs.getInt(7) + "";
+                arreglo[7] = rs.getString(8);
+                modelo.addRow(arreglo);
+            }
+            return modelo;
+        } catch (Exception e) {
+            System.out.println("El error es " + e);
+        }
+        return modelo;
+    }
+
+    public static DefaultTableModel Tabla_Alimentaciones(DefaultTableModel modelo, int id_usuario, int id_Colmena) {
+        String arreglo[] = new String[7];
+        try {
+            st = con.createStatement();
+            rs = st.executeQuery("select ta.Nombre_colmena, t.Fecha, t.Tipo, t.Alimento, t.Cantidad, t.Cantidad_Dias, t.Descripcion\n"
+                    + "from Alimentaciones as t inner join Tareas as ta on t.id_Tarea = ta.Id \n"
+                    + "where ta.id_Usuario = " + id_usuario + " and ta.id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                arreglo[0] = rs.getString(1);
+                arreglo[1] = rs.getString(2);
+                arreglo[2] = rs.getString(3);
+                arreglo[3] = rs.getString(4);
+                arreglo[4] = rs.getDouble(5) + "";
+                arreglo[5] = rs.getDouble(6) + "";
+                arreglo[6] = rs.getString(7);
+                modelo.addRow(arreglo);
+            }
+            return modelo;
+        } catch (Exception e) {
+            System.out.println("El error es " + e);
+        }
+        return modelo;
+    }
+
+    public static DefaultTableModel Tabla_Cosechas(DefaultTableModel modelo, int id_usuario, int id_Colmena) {
+        String arreglo[] = new String[5];
+        try {
+            st = con.createStatement();
+            rs = st.executeQuery("select ta.Nombre_colmena, t.Fecha, t.Producto, t.Cantidad, t.Descripcion\n"
+                    + "from Cosechas as t inner join Tareas as ta on t.id_Tarea = ta.Id \n"
+                    + "where ta.id_Usuario = " + id_usuario + " and ta.id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                arreglo[0] = rs.getString(1);
+                arreglo[1] = rs.getString(2);
+                arreglo[2] = rs.getString(3);
+                arreglo[3] = rs.getDouble(4) + "";
+                arreglo[4] = rs.getString(5);
+                modelo.addRow(arreglo);
+            }
+            return modelo;
+        } catch (Exception e) {
+            System.out.println("El error es " + e);
+        }
+        return modelo;
+    }
+
+    public static DefaultTableModel Tabla_Movimientos(DefaultTableModel modelo, int id_usuario, int id_Colmena) {
+        String arreglo[] = new String[6];
+        try {
+            st = con.createStatement();
+            rs = st.executeQuery("select ta.Nombre_colmena, t.Fecha_Salida, t.Ciudad_Salida, t.Fecha_Llegada, t.Ciudad_Llegada, t.Motivo\n"
+                    + "from Movimientos as t inner join Tareas as ta on t.id_Tarea = ta.Id \n"
+                    + "where ta.id_Usuario = 1 and ta.id_Colmena = 1;");
+            while (rs.next()) {
+                arreglo[0] = rs.getString(1);
+                arreglo[1] = rs.getString(2);
+                arreglo[2] = rs.getString(3);
+                arreglo[3] = rs.getDouble(4) + "";
+                arreglo[4] = rs.getString(5);
+                arreglo[5] = rs.getString(6);
+                modelo.addRow(arreglo);
+            }
+            return modelo;
+        } catch (Exception e) {
+            System.out.println("El error es " + e);
+        }
+        return modelo;
+    }
+
+    public static int Insertar_Movimiento(int id_Usuario, int id_Colmena, String fecha_salida, String ciudad_salida, String fecha_llegada,
+            String ciudad_llegada, String motivo) {
+        int id_Tarea = 0;
+        try {
+            rs = st.executeQuery("select id from Tareas where id_Usuario = " + id_Usuario + " and id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                id_Tarea = rs.getInt("Id");
+            }
+            ps = con.prepareStatement("INSERT INTO Movimientos VALUES (?,?,?,?,?,?)");
+            ps.setInt(1, id_Tarea);
+            ps.setString(2, fecha_salida);
+            ps.setString(3, ciudad_salida);
+            ps.setString(4, fecha_llegada);
+            ps.setString(5, ciudad_llegada);
+            ps.setString(6, motivo);
+            ps.executeUpdate();
+            return 1;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return 0;
     }
 }
