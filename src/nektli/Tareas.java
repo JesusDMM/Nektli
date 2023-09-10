@@ -44,7 +44,6 @@ public class Tareas extends javax.swing.JFrame {
         exit_button = new javax.swing.JLabel();
         minimize_button = new javax.swing.JLabel();
         left_panel = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
         tabbed_pane = new javax.swing.JTabbedPane();
         add_tab = new javax.swing.JPanel();
         fill_label = new javax.swing.JLabel();
@@ -115,6 +114,8 @@ public class Tareas extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ventana Material");
@@ -168,10 +169,7 @@ public class Tareas extends javax.swing.JFrame {
         left_panel.setBackground(new java.awt.Color(255, 255, 204));
         left_panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Trazadooorre.png"))); // NOI18N
-        left_panel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 350, 110));
-
-        tabbed_pane.setBackground(new java.awt.Color(255, 255, 102));
+        tabbed_pane.setBackground(java.awt.Color.orange);
         tabbed_pane.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tabbed_pane.setOpaque(true);
 
@@ -329,6 +327,7 @@ public class Tareas extends javax.swing.JFrame {
 
         tabbed_pane.addTab("Cosecha", update_tab);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel17.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
@@ -445,7 +444,7 @@ public class Tareas extends javax.swing.JFrame {
                         .addGap(31, 31, 31)
                         .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane3))
-                .addContainerGap(765, Short.MAX_VALUE))
+                .addContainerGap(772, Short.MAX_VALUE))
         );
         search_tabLayout.setVerticalGroup(
             search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -463,7 +462,14 @@ public class Tareas extends javax.swing.JFrame {
 
         tabbed_pane.addTab("Total Tareas", search_tab);
 
-        left_panel.add(tabbed_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, -1, -1));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        tabbed_pane.addTab("Movimientos", jPanel2);
+
+        left_panel.add(tabbed_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 0, 1700, -1));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
+        left_panel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
         getContentPane().add(left_panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1270, 690));
 
@@ -726,14 +732,15 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
