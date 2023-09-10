@@ -31,6 +31,7 @@ public class Colmenas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jComboBox4 = new javax.swing.JComboBox<>();
         jTextField2 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -38,7 +39,6 @@ public class Colmenas extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -61,6 +61,9 @@ public class Colmenas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Producción", "Nucleo" }));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 260, 30));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, 260, 30));
 
         jLabel5.setBackground(new java.awt.Color(78, 37, 19));
@@ -96,7 +99,6 @@ public class Colmenas extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(78, 37, 19));
         jLabel7.setText("Latitud");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 260, 30));
         getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 260, 30));
 
         jLabel8.setBackground(new java.awt.Color(78, 37, 19));
@@ -162,13 +164,13 @@ public class Colmenas extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 590, 210, 60));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activa", "Inactiva" }));
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 180, 260, 30));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SI", "No" }));
         getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 260, 30));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tierra", "Cemento" }));
         getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 360, 260, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Colmenas/Fondo.png"))); // NOI18N
@@ -186,10 +188,11 @@ public class Colmenas extends javax.swing.JFrame {
             String nombre = jTextField8.getText();
             int n_alzas = Integer.parseInt(jTextField7.getText());
             int n_bastidores = Integer.parseInt(jTextField6.getText());
-            String tipo = jTextField4.getText();
             //Trabajo con jcombobox
             Object Item = jComboBox3.getSelectedItem();
             String suelo = Item.toString();
+            Item = jComboBox4.getSelectedItem();
+            String tipo = Item.toString();
             Item = jComboBox2.getSelectedItem();
             String proteccion = Item.toString();
             Item = jComboBox1.getSelectedItem();
@@ -197,7 +200,7 @@ public class Colmenas extends javax.swing.JFrame {
             ///////////////////////////////
             //Tratamiento de fecha
             Date selectedDate = jDateChooser1.getDate();
-            SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             String Fecha = sdf.format(selectedDate);
             ///////////////////////////////////
             double longitud = Double.parseDouble(jTextField2.getText());
@@ -215,6 +218,9 @@ public class Colmenas extends javax.swing.JFrame {
                 longitud, latitud, ciudad, descripcion, id);
                 if (bandera == true) {
                     JOptionPane.showMessageDialog(rootPane, "Se creo la colmena con exito");
+                    Menu menu = new Menu ();
+                    menu.setVisible(true);
+                    this.dispose();
                 }else{
                     JOptionPane.showMessageDialog(rootPane, "Ups! ocurrio un error intentalo despues");
                 }
@@ -222,9 +228,6 @@ public class Colmenas extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(rootPane, "Tipos de datos incorrectos en tus respuestas");
         }
-        JLogin id = new JLogin ();
-        int ID = id.getInt();
-        System.out.println(ID);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
@@ -267,6 +270,7 @@ public class Colmenas extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -284,7 +288,6 @@ public class Colmenas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
