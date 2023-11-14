@@ -4,6 +4,8 @@
  */
 package nektli;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author 52811
@@ -15,6 +17,10 @@ public class MovimientoEntrada extends javax.swing.JFrame {
      */
     public MovimientoEntrada() {
         initComponents();
+          ImageIcon icono = new ImageIcon("C:\\Users\\Jaime Tec\\Documents\\TecMante\\Roberto\\Nektli\\src\\recursos\\icono.png");
+
+        // Establecer el ícono en la ventana
+        setIconImage(icono.getImage());
     }
 
     /**

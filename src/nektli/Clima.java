@@ -2,6 +2,7 @@ package nektli;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,6 +17,12 @@ public class Clima extends javax.swing.JFrame {
      */
     public Clima() {
         initComponents();
+        
+          ImageIcon icono = new ImageIcon("C:\\Users\\Jaime Tec\\Documents\\TecMante\\Roberto\\Nektli\\src\\recursos\\icono.png");
+
+        // Establecer el ícono en la ventana
+        setIconImage(icono.getImage());
+        
         jLabel10.setText("");
         jLabel11.setText("");
         jLabel12.setText("");
@@ -63,6 +70,7 @@ public class Clima extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -119,7 +127,7 @@ public class Clima extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 790, 149, 99));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 40, 100, 80));
 
         jButton3.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
         jButton3.setText(">");
@@ -128,7 +136,7 @@ public class Clima extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 800, 163, 99));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 40, 100, 80));
 
         jLabel10.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
         jLabel10.setText("jLabel10");
@@ -148,14 +156,20 @@ public class Clima extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
         jLabel14.setText("jLabel14");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 708, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 650, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
         jLabel15.setText("jLabel15");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1048, 708, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 660, -1, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
+
+        jLabel17.setBackground(new java.awt.Color(214, 234, 248));
+        jLabel17.setForeground(new java.awt.Color(102, 255, 51));
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/clima/Fondo.png"))); // NOI18N
+        jLabel17.setText("jLabel17");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 760));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -259,6 +273,7 @@ public class Clima extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

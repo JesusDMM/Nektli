@@ -4,6 +4,8 @@
  */
 package nektli;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author 52811
@@ -15,6 +17,10 @@ public class MovimientoSalida extends javax.swing.JFrame {
      */
     public MovimientoSalida() {
         initComponents();
+          ImageIcon icono = new ImageIcon("C:\\Users\\Jaime Tec\\Documents\\TecMante\\Roberto\\Nektli\\src\\recursos\\icono.png");
+
+        // Establecer el ícono en la ventana
+        setIconImage(icono.getImage());
     }
 
     /**
@@ -106,9 +112,6 @@ public class MovimientoSalida extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

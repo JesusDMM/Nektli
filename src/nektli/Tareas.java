@@ -5,6 +5,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
@@ -20,6 +21,10 @@ public class Tareas extends javax.swing.JFrame {
     public Tareas() {
         //inicialización de componentes
         initComponents();
+          ImageIcon icono = new ImageIcon("C:\\Users\\Jaime Tec\\Documents\\TecMante\\Roberto\\Nektli\\src\\recursos\\icono.png");
+
+        // Establecer el ícono en la ventana
+        setIconImage(icono.getImage());
         bd bd = new bd();
         JLogin login = new JLogin();
         ID = login.getInt();

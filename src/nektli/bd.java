@@ -21,7 +21,7 @@ public class bd {
     public bd() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Nektli", "root", "JESUSdaniel444");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Nektli", "root", "");
             st = con.createStatement();
             ps = con.prepareStatement("INSERT INTO usuario VALUES (?,?)");
             rs = st.executeQuery("select * from Usuarios");
@@ -67,6 +67,7 @@ public class bd {
             ps.setInt(1, 0);
             ps.setString(2, Correo);
             ps.setString(3, Contraseña);
+            ps.execute();
             return true;
         } catch (Exception e) {
             System.err.print(e);

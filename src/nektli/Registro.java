@@ -4,6 +4,7 @@
  */
 package nektli;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,6 +18,10 @@ public class Registro extends javax.swing.JFrame {
      */
     public Registro() {
         initComponents();
+          ImageIcon icono = new ImageIcon("C:\\Users\\Jaime Tec\\Documents\\TecMante\\Roberto\\Nektli\\src\\recursos\\icono.png");
+
+        // Establecer el ícono en la ventana
+        setIconImage(icono.getImage());
     }
 
     /**
