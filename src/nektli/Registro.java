@@ -4,7 +4,12 @@
  */
 package nektli;
 
+<<<<<<< HEAD
 import javax.swing.ImageIcon;
+=======
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+>>>>>>> fed1fc49ae4148c046595e8eeedfb1b8765c5e78
 import javax.swing.JOptionPane;
 
 /**
@@ -22,6 +27,34 @@ public class Registro extends javax.swing.JFrame {
 
         // Establecer el ícono en la ventana
         setIconImage(icono.getImage());
+    }
+
+    public boolean verificar_email(String correo) {
+        String regx = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
+        Pattern pattern = Pattern.compile(regx);
+        Matcher matcher = pattern.matcher(correo);
+        if (matcher.matches()) {
+            String dominio = correo.split("@")[1];
+            if (dominioPermitido(dominio)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean dominioPermitido(String dominio) {
+        String[] dominiosPermitidos = {
+            "gmail.com",
+            "itsmante.edu.mx",
+            "outlook.com",
+            "hotmail.com"
+        };
+        for (String dominioPermitido : dominiosPermitidos) {
+            if (dominio.endsWith(dominioPermitido)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -147,23 +180,27 @@ public class Registro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "No dejes ningun campo en blanco");
         } else {
             if (jPasswordField1.getText().equals(jPasswordField2.getText())) {
-                bd bd = new bd ();
+                bd bd = new bd();
                 String Nombre = jTextField2.getText();
                 Object Seleccion = jComboBox1.getSelectedItem();
                 String Ocupacion = Seleccion.toString();
                 String Correo = jTextField1.getText();
                 String Contraseña = jPasswordField1.getText();
-                boolean bandera = bd.Ingresar_Usuario (Nombre, Ocupacion, Correo, Contraseña);
-                if (bandera == true) {
-                    JOptionPane.showMessageDialog(rootPane, "Informacion Guardada con exito, Inicia Sesion");{
-                    JLogin login = new JLogin ();
-                    login.setVisible(true);
-                    this.dispose();
+                boolean verificacion_correo = verificar_email(Correo);
+                boolean bandera = bd.Ingresar_Usuario(Nombre, Ocupacion, Correo, Contraseña);
+                if (verificacion_correo == true) {
+                    if (bandera == true) {
+                        JOptionPane.showMessageDialog(rootPane, "Informacion Guardada con exito, Inicia Sesion");
+                        JLogin login = new JLogin();
+                        login.setVisible(true);
+                        this.dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(rootPane, "Error inesperado vuelve mas tarde");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(rootPane, "Ingrese un correo valido");
                 }
-                }else{
-                    JOptionPane.showMessageDialog(rootPane, "Error inesperado vuelve mas tarde");
-                }
-            }else{
+            } else {
                 JOptionPane.showMessageDialog(rootPane, "Las contraseñas deben de coincidir");
             }
         }

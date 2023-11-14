@@ -139,6 +139,40 @@ public class bd {
         return 0;
     }
 
+    public static int Actualiza_Tratamiento(int id_Usuario, int id_Colmena, String fecha_inicial, String fecha_final,
+            String enfermedad, String producto, double dosis, int repeticiones, String persona) {
+        //verificar si es necesario buscar el usuario :)
+        int id_Tarea = 0;
+        try {
+            rs = st.executeQuery("select id from Tareas where id_Usuario = " + id_Usuario + " and id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                id_Tarea = rs.getInt("Id");
+            }
+            ps = con.prepareStatement("update tratamientos \n"
+                    + "set Fecha_I = '?' ,\n"
+                    + "Fecha_F = '?',\n"
+                    + "Enfermedad = '?',\n"
+                    + "Producto = '?',\n"
+                    + "Dosis = ? \n"
+                    + "Repeticiones_Dia = ? \n"
+                    + "Encargado = '?'\n"
+                    + "where id_Tarea = ?;");
+            ps.setString(1, fecha_inicial);
+            ps.setString(2, fecha_final);
+            ps.setString(3, enfermedad);
+            ps.setString(4, producto);
+            ps.setDouble(5, dosis);
+            ps.setInt(6, repeticiones);
+            ps.setString(7, persona);
+            ps.setInt(8, id_Tarea);
+            ps.executeUpdate();
+            return 1;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return 0;
+    }
+
     public static int Insertar_Cosecha(int id_Usuario, int id_Colmena, String fecha, String producto, double cantidad, String descripcion) {
         int id_Tarea = 0;
         try {
@@ -152,6 +186,33 @@ public class bd {
             ps.setString(3, producto);
             ps.setDouble(4, cantidad);
             ps.setString(5, descripcion);
+            ps.executeUpdate();
+            return 1;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return 0;
+    }
+
+    public static int Actualizar_Cosecha(int id_Usuario, int id_Colmena, String fecha, String producto, double cantidad, String descripcion) {
+        //verificar si es necesario buscar el id de la tarea
+        int id_Tarea = 0;
+        try {
+            rs = st.executeQuery("select id from Tareas where id_Usuario = " + id_Usuario + " and id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                id_Tarea = rs.getInt("Id");
+            }
+            ps = con.prepareStatement("update cosechas \n"
+                    + "set Fecha = '?',\n"
+                    + "Producto = '?',\n"
+                    + "Cantidad = ?,\n"
+                    + "Descripcion = '?'\n"
+                    + "where id_Tarea = ?;");
+            ps.setString(1, fecha);
+            ps.setString(2, producto);
+            ps.setDouble(3, cantidad);
+            ps.setString(4, descripcion);
+            ps.setInt(5, id_Tarea);
             ps.executeUpdate();
             return 1;
         } catch (Exception e) {
@@ -184,15 +245,47 @@ public class bd {
         return 0;
     }
 
+    public static int Actualizar_alimentacion(int id_Usuario, int id_Colmena, String fecha, String alimento, String tipo, double cantidad, int cantidad_dias,
+            String descripcion) {
+        //Verificar si es necesario buscar el id de la tarea
+        int id_Tarea = 0;
+        try {
+            rs = st.executeQuery("select id from Tareas where id_Usuario = " + id_Usuario + " and id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                id_Tarea = rs.getInt("Id");
+            }
+            ps = con.prepareStatement("update alimentaciones \n"
+                    + "set Fecha = '?',\n"
+                    + "Tipo = '?',\n"
+                    + "Alimento = '?',\n"
+                    + "Cantidad = ?,\n"
+                    + "Cantidad_Dias = ?,\n"
+                    + "Descripcion = '?'\n"
+                    + "where id_Tarea = ?;");
+            ps.setString(1, fecha);
+            ps.setString(2, tipo);
+            ps.setString(3, alimento);
+            ps.setDouble(4, cantidad);
+            ps.setDouble(5, cantidad_dias);
+            ps.setString(6, descripcion);
+            ps.setInt(7, id_Tarea);
+            ps.executeUpdate();
+            return 1;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return 0;
+    }
+
     public static DefaultTableModel Tabla_Tareas(DefaultTableModel modelo, int id_usuario, int id_Colmena) {
         String arreglo[] = new String[5];
         try {
             st = con.createStatement();
             rs = st.executeQuery("select tar.Nombre_colmena, count(t.id_tarea) as N_Tratamientos, count(c.id_tarea) as N_Cosechas, count(a.id_tarea) as N_Alimentacion, count(m.id_tarea) as N_Movimientos\n"
-                    + "from tareas as tar inner join Tratamientos as t on tar.ID = t.id_tarea\n"
-                    + "inner join Cosechas as c on tar.ID = c.id_tarea\n"
-                    + "inner join Alimentaciones as a on tar.ID = a.id_tarea\n"
-                    + "inner join Movimientos as m on tar.ID = m.id_Tarea\n"
+                    + "from tareas as tar left join Tratamientos as t on tar.ID = t.id_tarea\n"
+                    + "left join Cosechas as c on tar.ID = c.id_tarea\n"
+                    + "left join Alimentaciones as a on tar.ID = a.id_tarea\n"
+                    + "left join Movimientos as m on tar.ID = m.id_Tarea\n"
                     + "where tar.id_Usuario = " + id_usuario + " and tar.id_Colmena = " + id_Colmena + " "
                     + "group by tar.Nombre_colmena");
             while (rs.next()) {
@@ -326,4 +419,35 @@ public class bd {
         }
         return 0;
     }
+
+    public static int Actualizar_Movimiento(int id_Usuario, int id_Colmena, String fecha_salida, String ciudad_salida, String fecha_llegada,
+            String ciudad_llegada, String motivo) {
+        //Verificar si el necesario el buscar el id de la tarea
+        int id_Tarea = 0;
+        try {
+            rs = st.executeQuery("select id from Tareas where id_Usuario = " + id_Usuario + " and id_Colmena = " + id_Colmena);
+            while (rs.next()) {
+                id_Tarea = rs.getInt("Id");
+            }
+            ps = con.prepareStatement("update movimientos\n"
+                    + "set Fecha_Salida = '?',\n"
+                    + "Ciudad_Salida = '?',\n"
+                    + "Fecha_Llegada = '?',\n"
+                    + "Ciudad_Llegada = '?',\n"
+                    + "Motivo = '?'\n"
+                    + "where id_Tarea = ?;");
+            ps.setString(1, fecha_salida);
+            ps.setString(2, ciudad_salida);
+            ps.setString(3, fecha_llegada);
+            ps.setString(4, ciudad_llegada);
+            ps.setString(5, motivo);
+            ps.setInt(6, id_Tarea);
+            ps.executeUpdate();
+            return 1;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return 0;
+    }
+
 }

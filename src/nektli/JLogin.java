@@ -12,8 +12,8 @@ import javax.swing.JOptionPane;
  * @author 52811
  */
 public class JLogin extends javax.swing.JFrame {
-    public static int id = 1;
-
+    public static int id = 0;
+   
     /**
      * Creates new form JLogin
      */
@@ -85,13 +85,13 @@ public class JLogin extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Palatino Linotype", 0, 40)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Contraseña");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, -1, -1));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Palatino Linotype", 0, 40)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Correo");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 180, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Palatino Linotype", 0, 80)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,7 +132,6 @@ public class JLogin extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(rootPane, "Usuario no encontrado");
             }
         }
-        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

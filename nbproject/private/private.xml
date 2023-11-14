@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Menu.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Nektli.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Movimientos.java</file>
@@ -17,6 +18,9 @@
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Colmenas.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Tareas.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/MovimientoEntrada.java</file>
+=======
+            <file>file:/C:/Users/mendo/Documents/NetBeansProjects/Nektli/src/nektli/bd.java</file>
+>>>>>>> fed1fc49ae4148c046595e8eeedfb1b8765c5e78
         </group>
     </open-files>
 </project-private>
