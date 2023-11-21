@@ -3,14 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Menu.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Nektli.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Form_Dashboard.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Inventario_Agregar.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Inventario_Actualizar.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Movimientos.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/JLogin.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/recursos/MovimientoSalida/AbejasEntrada.png</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Detalles.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Registro.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/api.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Clima.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/MovimientoSalida.java</file>
@@ -18,9 +18,6 @@
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Colmenas.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Tareas.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/MovimientoEntrada.java</file>
-=======
-            <file>file:/C:/Users/mendo/Documents/NetBeansProjects/Nektli/src/nektli/bd.java</file>
->>>>>>> fed1fc49ae4148c046595e8eeedfb1b8765c5e78
         </group>
     </open-files>
 </project-private>
