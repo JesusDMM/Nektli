@@ -66,17 +66,10 @@ public class Tareas extends javax.swing.JFrame {
         tabbed_pane = new javax.swing.JTabbedPane();
         add_tab = new javax.swing.JPanel();
         fill_label = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jLabel2 = new javax.swing.JLabel();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jDateChooser3 = new com.toedter.calendar.JDateChooser();
-        jLabel3 = new javax.swing.JLabel();
         add_tab1 = new javax.swing.JPanel();
         fill_label2 = new javax.swing.JLabel();
         jDateChooser4 = new com.toedter.calendar.JDateChooser();
         jLabel14 = new javax.swing.JLabel();
-        jDateChooser5 = new com.toedter.calendar.JDateChooser();
-        jDateChooser6 = new com.toedter.calendar.JDateChooser();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -86,11 +79,12 @@ public class Tareas extends javax.swing.JFrame {
         jTextField13 = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
         jButton3 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
         update_tab = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jDateChooser7 = new com.toedter.calendar.JDateChooser();
@@ -128,7 +122,7 @@ public class Tareas extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel31 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<String>();
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -207,75 +201,80 @@ public class Tareas extends javax.swing.JFrame {
 
         fill_label.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         add_tab.add(fill_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, -1, -1));
-        add_tab.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 380, 40));
-
-        jLabel2.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel2.setText("Fecha inicial");
-        add_tab.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
-        add_tab.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
-        add_tab.add(jDateChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
-
-        jLabel3.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel3.setText("Fecha final");
-        add_tab.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
 
         add_tab1.setBackground(new java.awt.Color(255, 255, 255));
         add_tab1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         fill_label2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         add_tab1.add(fill_label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, -1, -1));
-        add_tab1.add(jDateChooser4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 380, 40));
 
-        jLabel14.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jDateChooser4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        add_tab1.add(jDateChooser4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 380, 40));
+
+        jLabel14.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel14.setText("Fecha inicial");
-        add_tab1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
-        add_tab1.add(jDateChooser5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
-        add_tab1.add(jDateChooser6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
+        add_tab1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel15.setText("Fecha final");
-        add_tab1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+        add_tab1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel16.setText("Enfermedad");
-        add_tab1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
+        add_tab1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel18.setText("Producto");
         add_tab1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, -1, -1));
-        add_tab1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 380, 40));
-        add_tab1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 190, 380, 40));
 
-        jLabel6.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField12.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        add_tab1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 380, 40));
+
+        jTextField5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        add_tab1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 220, 380, 40));
+
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel6.setText("Dosis");
-        add_tab1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
-        add_tab1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 380, 40));
+        add_tab1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 160, -1, -1));
 
-        jLabel19.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel19.setText("Veces al dia");
-        add_tab1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 250, -1, -1));
+        jTextField13.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        add_tab1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 380, 40));
 
-        jLabel5.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
+        jLabel19.setText("Veces al día");
+        add_tab1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 270, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel5.setText("Encargado");
-        add_tab1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
-        add_tab1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 380, 40));
-        add_tab1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 380, 40));
+        add_tab1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        add_tab1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 380, 40));
+
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel1.setText("Nombre de la colmena");
-        add_tab1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 350, -1, -1));
-        add_tab1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 390, 400, 40));
+        add_tab1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, -1, -1));
 
-        add_tab.add(add_tab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, -1));
+        jDateChooser2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        add_tab1.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 380, 40));
 
-        jButton3.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        add_tab.add(add_tab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 920, -1));
+
+        jButton3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jButton3.setText("Guardar");
+        jButton3.setOpaque(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        add_tab.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 520, 220, 80));
+        add_tab.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 220, 70));
+
+        jTextField4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        add_tab.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 380, 40));
+
+        jTextField2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 13)); // NOI18N
+        add_tab.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, 380, 40));
 
         tabbed_pane.addTab("Tratamiento", add_tab);
 
@@ -283,132 +282,157 @@ public class Tareas extends javax.swing.JFrame {
         update_tab.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         update_tab.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel9.setText("Producto");
-        update_tab.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 143, -1, -1));
-        update_tab.add(jDateChooser7, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 85, 380, 40));
+        update_tab.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jDateChooser7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        update_tab.add(jDateChooser7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 380, 40));
+
+        jLabel10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel10.setText("Fecha");
-        update_tab.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 41, -1, -1));
-        update_tab.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 190, 380, 38));
+        update_tab.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        update_tab.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 380, 38));
+
+        jLabel11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel11.setText("Cantidad");
-        update_tab.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 246, -1, -1));
-        update_tab.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 293, 380, 38));
+        update_tab.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        update_tab.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 380, 40));
+
+        jLabel12.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel12.setText("Descripción");
-        update_tab.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 160, -1, -1));
+        update_tab.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, -1, -1));
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        update_tab.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 380, 110));
+        update_tab.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 380, 200));
 
-        jButton4.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jButton4.setText("Guardar");
+        jButton4.setOpaque(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        update_tab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 480, 200, 90));
+        update_tab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 220, 70));
 
-        jLabel4.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel4.setText("Nombre de la colmena");
-        update_tab.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, -1, -1));
+        update_tab.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, -1, -1));
 
+        jTextField6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField6ActionPerformed(evt);
             }
         });
-        update_tab.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 410, 40));
+        update_tab.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 380, 40));
 
         tabbed_pane.addTab("Cosecha", update_tab);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel17.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel17.setText("Cantidad de alimento");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 146, -1, 30));
-        jPanel1.add(jDateChooser8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, 30));
 
-        jLabel20.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jDateChooser8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel1.add(jDateChooser8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 380, 40));
+
+        jLabel20.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel20.setText("Fecha");
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
 
+        jTextField10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextField10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 380, 40));
+        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 380, 40));
 
-        jLabel21.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel21.setText("Alimento");
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, 30));
-        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 380, 40));
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, 30));
 
-        jLabel22.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 380, 40));
+
+        jLabel22.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel22.setText("Nota");
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, -1, 30));
-        jPanel1.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, 380, 40));
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, -1, 30));
 
-        jLabel23.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField14.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel1.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 380, 40));
+
+        jLabel23.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel23.setText("Tipo");
-        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, -1, 30));
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, -1, 40));
 
         jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextArea2.setRows(5);
         jScrollPane2.setViewportView(jTextArea2);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 370, 140));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 380, 160));
 
-        jButton7.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jButton7.setText("Guardar");
+        jButton7.setOpaque(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 530, 220, 70));
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 220, 70));
 
-        jLabel8.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel8.setText("Cantidad de dias");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, -1, -1));
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, 380, 40));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 160, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jTextField7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, 380, 40));
+
+        jLabel13.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel13.setText("Nombre de la colmena");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, -1));
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 380, 40));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, -1, -1));
+
+        jTextField9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 380, 40));
 
         tabbed_pane.addTab("Alimentos", jPanel1);
 
         search_tab.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel24.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel24.setText("Nombre de la colmena");
 
+        jTextField15.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextField15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField15ActionPerformed(evt);
             }
         });
 
-        jButton10.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
+        jButton10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
         jButton10.setText("Buscar");
+        jButton10.setOpaque(false);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
             }
         });
 
+        jTable1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -422,11 +446,12 @@ public class Tareas extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(jTable1);
 
-        jLabel31.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel31.setText("Filtros");
 
-        jComboBox1.setFont(new java.awt.Font("OCR A Extended", 0, 25)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cantidad de tareas", "Tratamiento", "Movimiento", "Cosecha", "Alimento" }));
+        jComboBox1.setEditable(true);
+        jComboBox1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cantidad de tareas", "Tratamiento", "Movimiento", "Cosecha", "Alimento" }));
 
         javax.swing.GroupLayout search_tabLayout = new javax.swing.GroupLayout(search_tab);
         search_tab.setLayout(search_tabLayout);
@@ -450,7 +475,7 @@ public class Tareas extends javax.swing.JFrame {
                     .addGroup(search_tabLayout.createSequentialGroup()
                         .addGap(384, 384, 384)
                         .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(774, Short.MAX_VALUE))
+                .addContainerGap(772, Short.MAX_VALUE))
         );
         search_tabLayout.setVerticalGroup(
             search_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,8 +491,8 @@ public class Tareas extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(593, Short.MAX_VALUE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(452, Short.MAX_VALUE))
         );
 
         tabbed_pane.addTab("Total Tareas", search_tab);
@@ -475,49 +500,61 @@ public class Tareas extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel7.setText("Fecha llegada");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, -1, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel26.setText("Fecha Salida");
-        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
 
-        jLabel27.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel27.setText("Ciudad de salida");
-        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
 
-        jLabel28.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel28.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel28.setText("Ciudad de llegada");
-        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, -1, -1));
+        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
 
-        jLabel29.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel29.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel29.setText("Motivo");
-        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 260, -1, -1));
-        jPanel2.add(jDateChooser9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 380, 40));
-        jPanel2.add(jDateChooser10, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 380, 40));
-        jPanel2.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 380, 50));
-        jPanel2.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 380, 50));
+        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, -1, -1));
+
+        jDateChooser9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel2.add(jDateChooser9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 380, 40));
+
+        jDateChooser10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel2.add(jDateChooser10, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 380, 40));
+
+        jTextField16.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 13)); // NOI18N
+        jPanel2.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 380, 40));
+
+        jTextField17.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel2.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 380, 40));
 
         jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextArea3.setRows(5);
         jScrollPane4.setViewportView(jTextArea3);
 
-        jPanel2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, 380, 130));
+        jPanel2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 380, 90));
 
-        jButton11.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jButton11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jButton11.setText("Guardar");
+        jButton11.setOpaque(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 530, 210, 70));
+        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 220, 70));
 
-        jLabel30.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel30.setText("Nombre de la colmena");
-        jPanel2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
-        jPanel2.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 370, 50));
+        jPanel2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, -1));
+
+        jTextField18.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jPanel2.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 380, 40));
 
         tabbed_pane.addTab("Movimientos", jPanel2);
 
@@ -856,13 +893,9 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton7;
     private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private com.toedter.calendar.JDateChooser jDateChooser10;
     private com.toedter.calendar.JDateChooser jDateChooser2;
-    private com.toedter.calendar.JDateChooser jDateChooser3;
     private com.toedter.calendar.JDateChooser jDateChooser4;
-    private com.toedter.calendar.JDateChooser jDateChooser5;
-    private com.toedter.calendar.JDateChooser jDateChooser6;
     private com.toedter.calendar.JDateChooser jDateChooser7;
     private com.toedter.calendar.JDateChooser jDateChooser8;
     private com.toedter.calendar.JDateChooser jDateChooser9;
@@ -877,7 +910,6 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -888,7 +920,6 @@ public class Tareas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;

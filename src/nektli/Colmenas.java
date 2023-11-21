@@ -42,12 +42,11 @@ public class Colmenas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jComboBox4 = new javax.swing.JComboBox<>();
+        jComboBox4 = new javax.swing.JComboBox<String>();
         jTextField2 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
@@ -65,131 +64,155 @@ public class Colmenas extends javax.swing.JFrame {
         jTextField10 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<String>();
+        jComboBox2 = new javax.swing.JComboBox<String>();
+        jComboBox3 = new javax.swing.JComboBox<String>();
         jLabel15 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Producción", "Nucleo" }));
-        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 260, 30));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, 260, 30));
+        jComboBox4.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Producción", "Nucleo" }));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 260, 30));
+
+        jTextField2.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, 260, 30));
 
         jLabel5.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel5.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(78, 37, 19));
         jLabel5.setText("Longitud");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, -1, -1));
 
         jLabel3.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel3.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(78, 37, 19));
         jLabel3.setText("Número de Bastidores");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
 
         jLabel4.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel4.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(78, 37, 19));
         jLabel4.setText("Ciudad");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 230, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 0, 53)); // NOI18N
-        jLabel2.setText("COLMENAS");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, -1, -1));
-
         jLabel6.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel6.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(78, 37, 19));
         jLabel6.setText("Tipos");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, -1, -1));
 
         jLabel7.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel7.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(78, 37, 19));
         jLabel7.setText("Latitud");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 260, 30));
+
+        jTextField5.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 450, 260, 30));
 
         jLabel8.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel8.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(78, 37, 19));
         jLabel8.setText("Nombre");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
 
         jLabel9.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel9.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(78, 37, 19));
         jLabel9.setText("Fecha");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
 
         jLabel10.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel10.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(78, 37, 19));
         jLabel10.setText("Número de alzas");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, -1, -1));
 
         jLabel11.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel11.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(78, 37, 19));
         jLabel11.setText("Suelo");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 320, -1, -1));
-        getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, 260, 90));
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 260, 30));
+        getContentPane().add(textArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 460, 260, 100));
+        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 260, 30));
 
+        jTextField6.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 260, 30));
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 270, 260, 30));
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 260, 30));
+
+        jTextField7.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, 260, 30));
 
         jLabel12.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel12.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(78, 37, 19));
         jLabel12.setText("Descripción");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, -1, -1));
 
         jLabel13.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel13.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(78, 37, 19));
         jLabel13.setText("Estado");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 140, -1, -1));
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 260, 30));
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 270, 260, 30));
+
+        jTextField8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 13)); // NOI18N
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 260, 30));
+
+        jTextField10.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 280, 260, 30));
 
         jLabel14.setBackground(new java.awt.Color(78, 37, 19));
-        jLabel14.setFont(new java.awt.Font("Modern No. 20", 0, 34)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(78, 37, 19));
         jLabel14.setText("Protección");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, -1, -1));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(255, 204, 51));
+        jButton3.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 34)); // NOI18N
         jButton3.setText("Listo");
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton3.setOpaque(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 590, 210, 60));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 480, 210, 60));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activa", "Inactiva" }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 180, 260, 30));
+        jComboBox1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Activa", "Inactiva" }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 190, 260, 30));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SI", "No" }));
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 260, 30));
+        jComboBox2.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SI", "NO" }));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 370, 260, 30));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tierra", "Cemento" }));
-        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 360, 260, 30));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Colmenas/Fondo.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+        jComboBox3.setFont(new java.awt.Font("Yu Gothic Medium", 0, 13)); // NOI18N
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tierra", "Cemento" }));
+        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 370, 260, 30));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(255, 204, 51));
+
+        jLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 53)); // NOI18N
+        jLabel2.setText("COLMENAS");
+        jPanel1.add(jLabel2);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1230, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Colmenas/Fondo.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -302,6 +325,7 @@ public class Colmenas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField5;
