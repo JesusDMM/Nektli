@@ -48,38 +48,47 @@ public class Detalles extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 490, 370));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 490, 450));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel6.setText("Motivo");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, -1, -1));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton2.setText("Actualizar");
+        jButton2.setContentAreaFilled(false);
+        jButton2.setOpaque(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 610, 140, 50));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 610, 140, 50));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
+        jButton3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton3.setText("Guardar");
+        jButton3.setContentAreaFilled(false);
+        jButton3.setFocusCycleRoot(true);
+        jButton3.setOpaque(false);
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 610, 140, 50));
 
-        jLabel4.setFont(new java.awt.Font("Poppins", 1, 54)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 53)); // NOI18N
         jLabel4.setText("Detalles");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, -1, 80));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, 80));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton1.setText("Eliminar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 610, 140, 50));
+        jButton1.setContentAreaFilled(false);
+        jButton1.setOpaque(false);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 610, 140, 50));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/Detalles.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 60, -1, 460));
@@ -88,7 +97,7 @@ public class Detalles extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/FondoTransparente.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

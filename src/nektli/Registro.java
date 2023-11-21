@@ -67,7 +67,7 @@ public class Registro extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<String>();
         jTextField2 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
         jPasswordField2 = new javax.swing.JPasswordField();
@@ -88,71 +88,80 @@ public class Registro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 430, 30));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aficionado", "Intermedio", "Experto" }));
+        jComboBox1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Aficionado", "Intermedio", "Experto" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 430, 30));
+
+        jTextField2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 260, 430, 30));
 
+        jPasswordField1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField1ActionPerformed(evt);
             }
         });
         getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 560, 430, 30));
+
+        jPasswordField2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         getContentPane().add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 490, 430, 30));
 
-        jButton1.setFont(new java.awt.Font("OCR A Extended", 0, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 153, 0));
         jButton1.setText("Registra tu cuenta");
+        jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 610, 230, 60));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 620, 230, 60));
 
-        jLabel11.setFont(new java.awt.Font("OCR A Extended", 0, 23)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 23)); // NOI18N
         jLabel11.setText("Confirma tu contraseña");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 530, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("OCR A Extended", 0, 23)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 23)); // NOI18N
         jLabel10.setText("Crea una contraseña");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("OCR A Extended", 0, 23)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 23)); // NOI18N
         jLabel9.setText("Escribe tu correo ");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("OCR A Extended", 0, 23)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 23)); // NOI18N
         jLabel8.setText("Selecciona tu nivel");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("OCR A Extended", 0, 23)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 23)); // NOI18N
         jLabel6.setText("Escribe tu nombre");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("OCR A Extended", 0, 20)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(213, 159, 0));
         jLabel7.setText("  registrar tu cuenta");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("OCR A Extended", 0, 20)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(213, 159, 0));
         jLabel5.setText("Ingresa la información para ");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 150, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("OCR A Extended", 0, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 50)); // NOI18N
         jLabel4.setText("¡Registrate!");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 80, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Registro 2.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 620, 690));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 620, 690));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Trazado 1.png"))); // NOI18N

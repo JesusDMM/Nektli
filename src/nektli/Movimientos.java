@@ -51,26 +51,8 @@ public class Movimientos extends javax.swing.JFrame {
         minimize_button = new javax.swing.JLabel();
         left_panel = new javax.swing.JPanel();
         tabbed_pane = new javax.swing.JTabbedPane();
-        add_tab = new javax.swing.JPanel();
-        fill_label = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jDateChooser3 = new com.toedter.calendar.JDateChooser();
-        add_tab1 = new javax.swing.JPanel();
-        fill_label2 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jDateChooser5 = new com.toedter.calendar.JDateChooser();
-        jDateChooser6 = new com.toedter.calendar.JDateChooser();
-        jLabel18 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         update_tab = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -89,7 +71,19 @@ public class Movimientos extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        jLabel25 = new javax.swing.JLabel();
+        add_tab = new javax.swing.JPanel();
+        fill_label = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jDateChooser5 = new com.toedter.calendar.JDateChooser();
+        jLabel14 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ventana Material");
@@ -147,160 +141,160 @@ public class Movimientos extends javax.swing.JFrame {
         tabbed_pane.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tabbed_pane.setOpaque(true);
 
-        add_tab.setBackground(new java.awt.Color(255, 255, 255));
-        add_tab.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        fill_label.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        add_tab.add(fill_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel2.setText("Fecha ");
-        add_tab.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
-        add_tab.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
-        add_tab.add(jDateChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
-
-        add_tab1.setBackground(new java.awt.Color(255, 255, 255));
-        add_tab1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        fill_label2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        add_tab1.add(fill_label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, -1, -1));
-
-        jLabel14.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel14.setText("Fecha ");
-        add_tab1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
-        add_tab1.add(jDateChooser5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
-        add_tab1.add(jDateChooser6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
-
-        jLabel18.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel18.setText("Latitud");
-        add_tab1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, -1, -1));
-        add_tab1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 380, 40));
-        add_tab1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 380, 40));
-
-        jLabel6.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel6.setText("Longitud");
-        add_tab1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
-        jLabel3.setText("Ciudad");
-        add_tab1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
-        add_tab1.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 190, 380, 40));
-
-        add_tab.add(add_tab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, -1));
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton3.setText("Guardar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        add_tab.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, 140, 50));
-
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton2.setText("Actualizar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        add_tab.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 520, 140, 50));
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton1.setText("Eliminar");
-        add_tab.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, 140, 50));
-
-        tabbed_pane.addTab("Entrada", add_tab);
-
         update_tab.setBackground(new java.awt.Color(255, 255, 255));
         update_tab.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         update_tab.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
+        update_tab.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 110, 80));
+
+        jButton4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton4.setText("Guardar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        update_tab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 520, 140, 50));
+        update_tab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 140, 50));
 
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton5.setText("Actualizar");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        update_tab.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 520, 140, 50));
+        update_tab.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 460, 140, 50));
 
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton6.setText("Eliminar");
-        update_tab.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 520, 140, 50));
+        update_tab.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 460, 140, 50));
 
-        jLabel7.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel7.setText("Fecha ");
-        update_tab.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
-        update_tab.add(jDateChooser9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 380, 40));
+        update_tab.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jDateChooser9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        update_tab.add(jDateChooser9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 380, 40));
+
+        jLabel26.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel26.setText("Ciudad");
-        update_tab.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
-        update_tab.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 380, 40));
+        update_tab.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, -1));
 
-        jLabel27.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField17.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        update_tab.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 380, 40));
+
+        jLabel27.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel27.setText("Latitud");
-        update_tab.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, -1, -1));
-        update_tab.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 380, 40));
+        update_tab.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 80, -1, -1));
 
-        jLabel28.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jTextField18.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        update_tab.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, 380, 40));
+
+        jLabel28.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel28.setText("Longitud");
-        update_tab.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
-        update_tab.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 190, 380, 40));
+        update_tab.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 270, -1, -1));
+
+        jTextField19.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        update_tab.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 330, 380, 40));
 
         tabbed_pane.addTab("Salida", update_tab);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel20.setFont(new java.awt.Font("OCR A Extended", 0, 34)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel20.setText("Motivo");
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, -1, -1));
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, -1, -1));
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton7.setText("Guardar");
+        jButton7.setOpaque(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, 140, 50));
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, 140, 50));
 
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton8.setText("Actualizar");
+        jButton8.setOpaque(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 490, 140, 50));
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 490, 140, 50));
 
-        jButton9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton9.setText("Eliminar");
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 490, 140, 50));
+        jButton9.setOpaque(false);
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 490, 140, 50));
 
         jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextArea3.setRows(5);
         jScrollPane4.setViewportView(jTextArea3);
 
-        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 640, 280));
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, 640, 320));
 
         tabbed_pane.addTab("Detalles", jPanel1);
 
-        left_panel.add(tabbed_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 0, 1700, -1));
+        add_tab.setBackground(new java.awt.Color(255, 255, 255));
+        add_tab.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
-        left_panel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 80));
+        fill_label.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        add_tab.add(fill_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, -1, -1));
+
+        jButton3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
+        jButton3.setText("Guardar");
+        jButton3.setOpaque(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        add_tab.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 140, 50));
+
+        jButton2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
+        jButton2.setText("Actualizar");
+        jButton2.setOpaque(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        add_tab.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 460, 140, 50));
+
+        jButton1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
+        jButton1.setText("Eliminar");
+        jButton1.setOpaque(false);
+        add_tab.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 460, 140, 50));
+        add_tab.add(jDateChooser5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 380, 40));
+
+        jLabel14.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
+        jLabel14.setText("Fecha ");
+        add_tab.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, -1, -1));
+        add_tab.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 380, 40));
+
+        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
+        jLabel3.setText("Ciudad");
+        add_tab.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
+        jLabel18.setText("Latitud");
+        add_tab.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 80, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
+        jLabel6.setText("Longitud");
+        add_tab.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 270, -1, -1));
+        add_tab.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, 380, 40));
+        add_tab.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 330, 380, 40));
+
+        tabbed_pane.addTab("Entrada", add_tab);
+
+        left_panel.add(tabbed_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 1200, 640));
 
         getContentPane().add(left_panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1270, 690));
 
@@ -507,10 +501,8 @@ public class Movimientos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel add_tab;
-    private javax.swing.JPanel add_tab1;
     private javax.swing.JLabel exit_button;
     private javax.swing.JLabel fill_label;
-    private javax.swing.JLabel fill_label2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -520,14 +512,10 @@ public class Movimientos extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
-    private com.toedter.calendar.JDateChooser jDateChooser3;
     private com.toedter.calendar.JDateChooser jDateChooser5;
-    private com.toedter.calendar.JDateChooser jDateChooser6;
     private com.toedter.calendar.JDateChooser jDateChooser9;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;

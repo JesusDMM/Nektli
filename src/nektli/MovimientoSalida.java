@@ -53,44 +53,63 @@ public class MovimientoSalida extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton2.setText("Actualizar");
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 610, 140, 50));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 610, 140, 50));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(153, 153, 153));
+        jButton3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton3.setText("Guardar");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 610, 140, 50));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 380, 40));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 530, 380, 40));
+        jButton3.setBorderPainted(false);
+        jButton3.setContentAreaFilled(false);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 610, 140, 50));
 
-        jLabel8.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 380, 40));
+
+        jTextField3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 540, 380, 40));
+
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel8.setText("Longitud");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 490, -1, -1));
+
+        jDateChooser1.setBackground(new java.awt.Color(204, 204, 255));
+        jDateChooser1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 380, 40));
 
-        jLabel7.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel7.setText("Latitud");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 380, 40));
 
-        jLabel5.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 380, 40));
+
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel5.setText("Ciudad");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Poppins", 1, 54)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 53)); // NOI18N
         jLabel4.setText("Salida");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, 80));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton1.setText("Eliminar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 610, 140, 50));
+        jButton1.setContentAreaFilled(false);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 610, 140, 50));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/ImagenAbejas.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 100, -1, -1));
@@ -98,12 +117,12 @@ public class MovimientoSalida extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/FondoSolido.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel6.setText("Fecha");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/FondoTransparente.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -111,6 +130,10 @@ public class MovimientoSalida extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

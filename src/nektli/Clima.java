@@ -74,11 +74,11 @@ public class Clima extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 61, 480, 31));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 480, 31));
 
-        jLabel1.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel1.setText("Ingresa el nombre de tu ciudad");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, -1, 27));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, -1, 27));
 
         jButton1.setText("Buscar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -86,37 +86,37 @@ public class Clima extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 125, 31));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 125, 31));
 
-        jLabel2.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel2.setText("Clima general");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 104, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
-        jLabel3.setText("descripcion");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(549, 156, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 28)); // NOI18N
+        jLabel3.setText("Descripción");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel4.setText("Fecha y hora");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 212, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel5.setText("Temperatura MAX.");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 408, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Yu Gothic Light", 0, 32)); // NOI18N
         jLabel6.setText("Temperatura MIN.");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 591, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel7.setText("Sensación Termica");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(932, 212, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel8.setText("Humedad");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1026, 408, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jLabel9.setText("Descripción");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(996, 591, -1, -1));
 
@@ -127,7 +127,7 @@ public class Clima extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 40, 100, 80));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 750, 100, 80));
 
         jButton3.setFont(new java.awt.Font("OCR A Extended", 0, 32)); // NOI18N
         jButton3.setText(">");
@@ -136,29 +136,29 @@ public class Clima extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 40, 100, 80));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 750, 100, 80));
 
-        jLabel10.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 28)); // NOI18N
         jLabel10.setText("jLabel10");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 304, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 28)); // NOI18N
         jLabel11.setText("jLabel11");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1026, 304, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 28)); // NOI18N
         jLabel12.setText("jLabel12");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 494, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 28)); // NOI18N
         jLabel13.setText("jLabel13");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1026, 494, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 28)); // NOI18N
         jLabel14.setText("jLabel14");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 650, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("OCR A Extended", 0, 28)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 28)); // NOI18N
         jLabel15.setText("jLabel15");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 660, -1, -1));
 
