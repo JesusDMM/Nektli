@@ -65,7 +65,7 @@ public class MovimientoSalida extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 610, 140, 50));
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 153));
+        jButton3.setBackground(new java.awt.Color(255, 204, 0));
         jButton3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 20)); // NOI18N
         jButton3.setText("Guardar");
         jButton3.setBorderPainted(false);
