@@ -122,7 +122,7 @@ public class Tareas extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel31 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<String>();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -451,7 +451,7 @@ public class Tareas extends javax.swing.JFrame {
 
         jComboBox1.setEditable(true);
         jComboBox1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cantidad de tareas", "Tratamiento", "Movimiento", "Cosecha", "Alimento" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cantidad de tareas", "Tratamiento", "Movimiento", "Cosecha", "Alimento" }));
 
         javax.swing.GroupLayout search_tabLayout = new javax.swing.GroupLayout(search_tab);
         search_tab.setLayout(search_tabLayout);
@@ -558,7 +558,7 @@ public class Tareas extends javax.swing.JFrame {
 
         tabbed_pane.addTab("Movimientos", jPanel2);
 
-        left_panel.add(tabbed_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 0, 1700, -1));
+        left_panel.add(tabbed_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 1700, -1));
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/MovimientoSalida/BotonRegresar.png"))); // NOI18N
         left_panel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
@@ -609,7 +609,7 @@ public class Tareas extends javax.swing.JFrame {
             Date selectedDate = jDateChooser2.getDate();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             String fecha_inicial = sdf.format(selectedDate);
-            selectedDate = jDateChooser1.getDate();
+            selectedDate = jDateChooser2.getDate();
             String fecha_final = sdf.format(selectedDate);
             String enfermedad = jTextField3.getText();
             String producto = jTextField12.getText();

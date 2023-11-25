@@ -1,9 +1,15 @@
 package javaswingdev.main;
 
 import java.awt.Component;
+import javaswingdev.form.Colmenas;
 import javaswingdev.form.Form_Dashboard;
-import javaswingdev.form.Inventario_Actualizar;
-import javaswingdev.form.Inventario_Agregar;
+import javaswingdev.form.Movimiento_Entrada;
+import javaswingdev.form.Movimiento_Salida;
+import javaswingdev.form.Tareas_Alimentos;
+import javaswingdev.form.Tareas_Cosecha;
+import javaswingdev.form.Tareas_Movimientos;
+import javaswingdev.form.Tareas_Total_Tareas;
+import javaswingdev.form.Tareas_Tratamiento;
 import javaswingdev.menu.EventMenuSelected;
 
 public class Main extends javax.swing.JFrame {
@@ -23,12 +29,24 @@ public class Main extends javax.swing.JFrame {
             public void menuSelected(int index, int indexSubMenu) {
                 if (index == 0 && indexSubMenu == 0) {
                     showForm(new Form_Dashboard());
-                } else if (index == 1 && indexSubMenu == 1) {
-                    showForm(new Inventario_Agregar(index + " " + indexSubMenu));
-                } else if (index == 1 && indexSubMenu == 2) {
-                    showForm(new Inventario_Actualizar(index + " " + indexSubMenu));
+                } else if (index == 1 && indexSubMenu == 0) {
+                    showForm(new Colmenas(index + " " + indexSubMenu));
+                } else if (index == 2 && indexSubMenu == 1) {
+                    showForm(new Tareas_Alimentos(index + " " + indexSubMenu));
+                } else if (index == 2 && indexSubMenu == 2) {
+                    showForm(new Tareas_Cosecha(index + " " + indexSubMenu));
+                }else if (index == 2 && indexSubMenu == 3) {
+                    showForm(new Tareas_Movimientos(index + " " + indexSubMenu));
+                }else if (index == 2 && indexSubMenu == 4) {
+                    showForm(new Tareas_Tratamiento(index + " " + indexSubMenu));
+                }else if (index == 2 && indexSubMenu == 5) {
+                    showForm(new Tareas_Total_Tareas(index + " " + indexSubMenu));
+                }else if (index == 3 && indexSubMenu == 1) {
+                    showForm(new Movimiento_Entrada(index + " " + indexSubMenu));
+                }else if (index == 3 && indexSubMenu == 2) {
+                    showForm(new Movimiento_Salida(index + " " + indexSubMenu));
                 }else {
-                    showForm(new Inventario_Actualizar(index + " " + indexSubMenu));
+                    showForm(new Tareas_Tratamiento(index + " " + indexSubMenu));
 
                 }
             }

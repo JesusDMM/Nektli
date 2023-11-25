@@ -32,16 +32,24 @@ public class Menu extends JPanel {
         scroll.getViewport().setOpaque(false);
         scroll.setViewportBorder(null);
         add(scroll);
-        addTitle("Resumen de Invenario");
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.DASHBOARD, "General"));
-        addTitle("Inventarios");
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.DESCRIPTION, "Producto", "Agregar", "Modificar", "Actualizar"));
-        addTitle("Prestamos");
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.PERSON, "A un alumno"));  
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.ACCOUNT_BOX, "A un maestro"));  
-       
+        
+        
+        addTitle("Estadisticas");
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.DASHBOARD, "Dashboard"));
+        
+        
+        
+        addTitle("General");
+        
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.NATURE, "Colmenas"));
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.CHECK_CIRCLE, "Tareas", "Alimentos", "Cosechas","Movimientos", "Tratamientos", "Total Tareas"));
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.TRENDING_FLAT, "Movimientos","Entrada", "Salida"));
+
+        
         addTitle("Sesion");
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.ERROR_OUTLINE, "Cerrar sesión", "Salir al login", "Registrarse"));
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.CLOSE, "Cerrar sesión", "Salir al login", "Registrarse"));
+        
+
     }
 
     private JScrollPane createScroll() {

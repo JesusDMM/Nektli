@@ -48,7 +48,7 @@ public class Form_Dashboard extends javax.swing.JPanel {
 
             },
             new String [] {
-                "#", "Name", "Email", "Position", "Date Join"
+                "#", "Colmenas", "Email", "Tareas", "Movimientos"
             }
         ) {
             boolean[] canEdit = new boolean [] {

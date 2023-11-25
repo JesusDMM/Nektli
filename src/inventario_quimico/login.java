@@ -30,8 +30,8 @@ public class login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -61,20 +61,20 @@ public class login extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(new javax.swing.border.MatteBorder(null));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Imagen 1.png"))); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 480, 150));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/clima/Imagen 3.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 240, 260));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/undraw_Scientist_ft0o (2).png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 500, 340));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/clima/Imagen 2.png"))); // NOI18N
+        jLabel10.setText("jLabel10");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 370, 160));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 440));
 
-        jPanel2.setBackground(new java.awt.Color(173, 42, 58));
+        jPanel2.setBackground(new java.awt.Color(255, 153, 0));
+        jPanel2.setBorder(new javax.swing.border.MatteBorder(null));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -169,21 +169,20 @@ public class login extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 51, 51));
         jButton1.setText("LOGIN");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 306, 341, 40));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Sign Up");
+        jLabel13.setText("Registrate");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(253, 357, 122, -1));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(199, 226, 255));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel14.setText("Don't have an account?");
+        jLabel14.setText("¿No tienes cuenta?");
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 357, 213, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 420, 440));
@@ -265,8 +264,8 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
