@@ -4,12 +4,17 @@
  */
 package nektli;
 
-<<<<<<< HEAD
+
 import javax.swing.ImageIcon;
-=======
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
->>>>>>> fed1fc49ae4148c046595e8eeedfb1b8765c5e78
+
+import javax.swing.JOptionPane;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -66,8 +71,9 @@ public class Registro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextFieldRoundBeanInfo1 = new jtextfieldround.JTextFieldRoundBeanInfo();
         jTextField1 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<String>();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jTextField2 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
         jPasswordField2 = new javax.swing.JPasswordField();
@@ -93,7 +99,7 @@ public class Registro extends javax.swing.JFrame {
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 430, 30));
 
         jComboBox1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Aficionado", "Intermedio", "Experto" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aficionado", "Intermedio", "Experto" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -269,5 +275,6 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private jtextfieldround.JTextFieldRoundBeanInfo jTextFieldRoundBeanInfo1;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,19 +5,26 @@
         <group>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Menu.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Nektli.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/menu/Menu.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Form_Dashboard.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Inventario_Agregar.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Inventario_Actualizar.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Movimiento_Salida.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Movimientos.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/JLogin.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Detalles.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/api.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Clima.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Tareas_Movimientos.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/card/LabelIcon.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/card/Card.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/main/Main.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Tareas_Total_Tareas.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/MovimientoSalida.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/bd.java</file>
-            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Colmenas.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Movimiento_Entrada.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Colmenas.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Tareas_Cosecha.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Tareas_Alimentos.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/card/ModelCard.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Tareas_Tratamiento.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/Tareas.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/inventario_quimico/login.java</file>
             <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/nektli/MovimientoEntrada.java</file>
+            <file>file:/C:/Users/Jaime%20Tec/Documents/TecMante/Roberto/Nektli/src/javaswingdev/form/Clima.java</file>
         </group>
     </open-files>
 </project-private>

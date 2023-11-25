@@ -58,7 +58,7 @@
           <Color blue="80" green="80" red="80" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
-        <Property name="text" type="java.lang.String" value="$ 0.00"/>
+        <Property name="text" type="java.lang.String" value="Grafico 1"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbDescription">
@@ -70,7 +70,7 @@
           <Color blue="99" green="99" red="99" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
-        <Property name="text" type="java.lang.String" value="Report Income Monthly"/>
+        <Property name="text" type="java.lang.String" value="aaaaaaa"/>
       </Properties>
     </Component>
   </SubComponents>
