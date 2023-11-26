@@ -104,7 +104,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Yu Gothic UI Semibold" size="53" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="COLMENAS"/>
+            <Property name="text" type="java.lang.String" value="Colmenas"/>
           </Properties>
         </Component>
       </SubComponents>

@@ -47,7 +47,7 @@ public class Tareas_Movimientos extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel7.setFont(new java.awt.Font("Tw Cen MT", 0, 53)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 53)); // NOI18N
         jLabel7.setText("Movimientos");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -55,53 +55,54 @@ public class Tareas_Movimientos extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(328, Short.MAX_VALUE)
+                .addContainerGap(379, Short.MAX_VALUE)
                 .addComponent(jLabel7)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
-                .addContainerGap(346, Short.MAX_VALUE))
+                .addContainerGap(391, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel2))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addComponent(jLabel2)
+                .addContainerGap(61, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel7)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, -1));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 80));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(new javax.swing.border.MatteBorder(null));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel8.setText("Fecha llegada");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, -1, -1));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 40, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel26.setText("Fecha Salida");
-        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
+        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, -1, -1));
 
-        jLabel27.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel27.setText("Ciudad de salida");
-        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
+        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, -1, -1));
 
-        jLabel28.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
+        jLabel28.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel28.setText("Ciudad de llegada");
-        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
+        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 210, -1, -1));
 
-        jLabel29.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
+        jLabel29.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel29.setText("Motivo");
-        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, -1, -1));
+        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, -1, -1));
 
         jDateChooser9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jPanel2.add(jDateChooser9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 380, 40));
+        jPanel2.add(jDateChooser9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 380, 40));
 
         jDateChooser10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jPanel2.add(jDateChooser10, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 380, 40));
+        jPanel2.add(jDateChooser10, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 380, 40));
 
         jTextField16.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 13)); // NOI18N
         jTextField16.addActionListener(new java.awt.event.ActionListener() {
@@ -109,17 +110,17 @@ public class Tareas_Movimientos extends javax.swing.JPanel {
                 jTextField16ActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 380, 40));
+        jPanel2.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 380, 40));
 
         jTextField17.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jPanel2.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 380, 40));
+        jPanel2.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 270, 380, 40));
 
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextArea3.setRows(5);
         jScrollPane4.setViewportView(jTextArea3);
 
-        jPanel2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 380, 90));
+        jPanel2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, 380, 90));
 
         jButton11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jButton11.setText("Guardar");
@@ -129,16 +130,16 @@ public class Tareas_Movimientos extends javax.swing.JPanel {
                 jButton11ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 220, 70));
+        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 530, 220, 70));
 
-        jLabel30.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel30.setText("Nombre de la colmena");
-        jPanel2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, -1));
+        jPanel2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, -1, -1));
 
         jTextField18.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jPanel2.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 380, 40));
+        jPanel2.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 380, 40));
 
-        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 950, 630));
+        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1100, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed

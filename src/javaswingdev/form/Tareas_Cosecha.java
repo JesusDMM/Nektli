@@ -45,7 +45,7 @@ public class Tareas_Cosecha extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel7.setFont(new java.awt.Font("Tw Cen MT", 0, 53)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 53)); // NOI18N
         jLabel7.setText("Cosecha");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -53,23 +53,24 @@ public class Tareas_Cosecha extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(372, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addContainerGap(466, Short.MAX_VALUE))
+                .addContainerGap(1085, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(425, 425, 425)
+                .addComponent(jLabel7)
+                .addContainerGap(473, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel2))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1021, -1));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 80));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(new javax.swing.border.MatteBorder(null));
@@ -77,35 +78,35 @@ public class Tareas_Cosecha extends javax.swing.JPanel {
 
         jLabel10.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel10.setText("Fecha");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, -1, -1));
 
         jDateChooser7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jPanel3.add(jDateChooser7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 380, 40));
+        jPanel3.add(jDateChooser7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 380, 40));
 
         jTextField1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 380, 38));
+        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 380, 38));
 
         jLabel9.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel9.setText("Producto");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel11.setText("Cantidad");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, -1, -1));
 
         jTextField8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 380, 40));
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 380, 40));
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 380, 200));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 270, 380, 200));
 
         jLabel12.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel12.setText("Descripción");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 180, -1, -1));
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 210, -1, -1));
 
         jTextField6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -113,11 +114,11 @@ public class Tareas_Cosecha extends javax.swing.JPanel {
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, 380, 40));
+        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 380, 40));
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 34)); // NOI18N
         jLabel4.setText("Nombre de la colmena");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 10, -1, -1));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 40, -1, -1));
 
         jButton4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 32)); // NOI18N
         jButton4.setText("Guardar");
@@ -127,9 +128,9 @@ public class Tareas_Cosecha extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 500, 220, 70));
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 530, 220, 70));
 
-        add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 950, 590));
+        add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1100, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
